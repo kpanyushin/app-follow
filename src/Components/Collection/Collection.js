@@ -16,7 +16,8 @@ class Collection extends Component {
                   <ul key={key}>
                     <li>
                       <img src={element.icon} alt={element.title} />
-                      {element.title} {element.category} {element.price === 0 ? '' : `${element.price}$`} <br />
+                      {element.title} {element.category} {element.price === 0 ? '' : `${element.price}$`}
+                      <a href={element.link} target='_blank'>itunes</a>
                     </li>
                   </ul>
                 );

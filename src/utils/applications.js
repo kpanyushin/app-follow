@@ -65,7 +65,7 @@ const applications = [
     }
   },
   {
-    device: 'iPhone',
+    device: 'iPad',
     icon: plague_inc,
     title: 'Plague Inc.',
     descr: 'Can you infect the world? Plague Inc. is a unique mix of high strategy and terrifyingly realistic simulation.',
