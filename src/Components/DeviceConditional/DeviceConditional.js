@@ -2,36 +2,20 @@ import React, { Component } from 'react';
 import './DeviceConditional.css';
 
 export default class DeviceConditional extends Component {
-  state = {
-    activeDevice: 'iPhone'
-  }
-
-  handleIPhoneClick = () => {
-    this.setState({
-      activeDevice: 'iPhone'
-    });
-  }
-
-  handleIPadClick = () => {
-    this.setState({
-      activeDevice: 'iPad'
-    })
-  }
-
   render() {
-    // let { activeDevice } = this.state;
+    let { onIphoneClick, onIpadClick } = this.props;
 
     return(
       <div className="conditional_container">
         <div className="ui buttons">
           <button
-            className={this.state.activeDevice === 'iPhone' ? 'ui button active' : 'ui button'}
-            onClick={this.handleIPhoneClick}>
+            className={'iPhone' ? 'ui button active' : 'ui button'}
+            onClick={onIphoneClick}>
             iPhone
           </button>
           <button
-            className={this.state.activeDevice === 'iPad' ? 'ui button active' : 'ui button'}
-            onClick={this.handleIPadClick}>
+            className={'iPad' ? 'ui button active' : 'ui button'}
+            onClick={onIpadClick}>
             iPad
           </button>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import propTypes from 'prop-types';
 import DeviceConditional from './Components/DeviceConditional/DeviceConditional';
 import Collection from './Components/Collection/Collection';
 import Banners from './Components/Banners/Banners';
@@ -8,51 +9,33 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.handleIPhoneClick = this.handleIPhoneClick.bind(this);
+    this.handleIPadClick = this.handleIPadClick.bind(this);
     this.state = {
-      results: [],
-      isLoading: false
-    };
+      activeDevice: 'iPhone'
+    }
   }
 
-  // componentDidMount() {
-  //   this.setState({
-  //     isLoading: true
-  //   })
-  //   fetch('./utils/iPhone.json')
-  //     .then(response => {
-  //       response.json();
-  //
-  //       console.log(response);
-  //     })
-  //     .then(data => this.setState(
-  //       {
-  //         results: data.results,
-  //         isLoading: false
-  //       })
-  //     );
-  // }
+  handleIPhoneClick = () => {
+    this.setState({
+      activeDevice: 'iPhone'
+    });
+  }
 
+  handleIPadClick = () => {
+    this.setState({
+      activeDevice: 'iPad'
+    })
+  }
   render() {
-    // const { results, isLoading } = this.state;
-    let { collection } = this.props;
-    //
-    // if (isLoading) {
-    //   return <p>Loading ...</p>;
-    // }
-
     return (
       <div className="App">
-          <DeviceConditional />
+          <DeviceConditional
+            onIphoneClick={this.handleIPhoneClick}
+            onIpadClick={this.handleIPadClick} />
           <Banners />
-          <Collection collection={collection} />
+          <Collection activeDevice={this.state.activeDevice}/>
       </div>
-      /* <div>
-        {results.map(result =>
-          <ul key={result.phone}>
-            <li>{result.name.title} {result.name.first} {result.name.last}</li>
-          </ul>
-        )}
-      </div> */
     );
   }
 }
