@@ -32,9 +32,10 @@ class App extends Component {
       <div className="App">
           <DeviceConditional
             onIphoneClick={this.handleIPhoneClick}
-            onIpadClick={this.handleIPadClick} />
+            onIpadClick={this.handleIPadClick}
+            activeDevice={this.state.activeDevice} />
           <Banners />
-          <Collection activeDevice={this.state.activeDevice}/>
+          <Collection activeDevice={this.state.activeDevice} />
       </div>
     );
   }
