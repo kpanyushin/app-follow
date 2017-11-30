@@ -1,0 +1,18 @@
+.collection_container {
+  margin-top: 30px; }
+  .collection_container .collection_row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-x: auto; }
+    .collection_container .collection_row ul {
+      list-style-type: none; }
+      .collection_container .collection_row ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .collection_container .collection_row ul li img {
+          width: 53px;
+          height: 53px; }

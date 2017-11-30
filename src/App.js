@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import iPhone from './utils/iPhone.js';
 import DeviceConditional from './Components/DeviceConditional/DeviceConditional';
+import Collection from './Components/Collection/Collection';
 import Banners from './Components/Banners/Banners';
 import './App.css';
 
@@ -34,6 +34,7 @@ class App extends Component {
 
   render() {
     // const { results, isLoading } = this.state;
+    let { collection } = this.props;
     //
     // if (isLoading) {
     //   return <p>Loading ...</p>;
@@ -41,23 +42,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div>
           <DeviceConditional />
-        </div>
-        <div>
           <Banners />
-        </div>
-        {/* <div>
-          {
-            iPhone.map((element, key) => {
-              return (
-                <ul key={key}>
-                  <li><img src={element.icon} alt='1' /> {element.title} {element.descr}</li>
-                </ul>
-              );
-            })
-          }
-        </div> */}
+          <Collection collection={collection} />
       </div>
       /* <div>
         {results.map(result =>

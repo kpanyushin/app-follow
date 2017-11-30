@@ -9,8 +9,6 @@ import './Banners.css';
 
 export default class Banners extends Component {
   render() {
-    // let { activeDevice } = this.state;
-
     return(
       <div className='top_banners'>
         <Slider
