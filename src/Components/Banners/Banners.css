@@ -1,0 +1,10 @@
+.top_banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between; }
+
+img {
+  width: calc(100% / 3);
+  margin-right: 4px; }
