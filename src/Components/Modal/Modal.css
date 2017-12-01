@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #ddd;
   font-size: 16px;
   transform: translateX(100%);
-  transition: all 0s; }
+  transition: all 0s;
+  overflow: hidden !important; }
 
 .modal_active {
   transform: translateX(0);

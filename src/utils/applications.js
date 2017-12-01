@@ -34,9 +34,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/heads-up/id623592465?mt=8',
     price: 0.99,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPad',
@@ -47,9 +45,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/monument-valley-2/id1187265767?mt=8',
     price: 1.99,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPhone',
@@ -60,9 +56,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/kirakira/id955687901?mt=8',
     price: 0.99,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPad',
@@ -73,9 +67,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/plague-inc/id525818839?mt=8',
     price: 0.99,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPhone',
@@ -86,9 +78,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/minecraft/id479516143?mt=8',
     price: 6.99,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPhone',
@@ -99,9 +89,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/rules-of-survival/id1307961750?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPhone',
@@ -112,9 +100,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/youtube-watch-listen-stream/id544007664?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Games'
   },
   {
     device: 'iPhone',
@@ -125,9 +111,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/messenger/id454638411?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -138,9 +122,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/facebook/id284882215?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -151,9 +133,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/snapchat/id447188370?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -164,9 +144,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/instagram/id389801252?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -177,9 +155,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/hotschedules/id294934058?mt=8',
     price: 2.99,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -190,9 +166,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/amazon-shopping-made-easy/id297606951?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -203,9 +177,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/bitmoji/id868077558?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -216,9 +188,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/clash-of-clans/id529479190?mt=8',
     price: 0.,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -229,9 +199,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/facetune/id606310581?mt=8',
     price: 3.99,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -242,9 +210,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/gmail-email-by-google/id422689480?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -255,9 +221,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/hbo-now-stream-tv-movies/id971265422?mt=8',
     price: 0,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -268,9 +232,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/monopoly-game/id337021781?mt=8',
     price: 0.99,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -281,9 +243,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/pok%C3%A9mon-go/id1094591345?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -294,9 +254,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/heads-up/id623592465?mt=8',
     price: 1.99,
     purchases: false,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -307,9 +265,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -320,9 +276,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/tinder/id547702041?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -333,9 +287,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/uber/id368677368?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   },
   {
     device: 'iPhone',
@@ -346,9 +298,7 @@ const applications = [
     link: 'https://itunes.apple.com/us/app/whatsapp-messenger/id310633997?mt=8',
     price: 0,
     purchases: true,
-    collection: {
-      games: true
-    }
+    collection: 'Free'
   }
 ]
 

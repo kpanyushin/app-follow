@@ -28,6 +28,7 @@ class App extends Component {
     let { setModalOpen, isOpen } = this.props;
 
     setModalOpen(!isOpen);
+    window.scrollTo(0,0);
   }
 
   handleIPhoneClick = () => {
