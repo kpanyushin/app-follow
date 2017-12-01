@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types'
 import './DeviceConditional.css';
 
 export default class DeviceConditional extends Component {
+  static propTypes = {
+    onIphoneClick: propTypes.func,
+    onIpadClick: propTypes.func,
+    activeDevice: propTypes.string
+  }
   render() {
     let { onIphoneClick, onIpadClick, activeDevice} = this.props;
 

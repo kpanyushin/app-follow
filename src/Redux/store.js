@@ -12,7 +12,7 @@ const enhancer = compose(
 
 const store = createStore(
   reducers,
-  Map(),
+  Map({}),
   enhancer
 );
 

@@ -8,7 +8,5 @@ const initialState = fromJS({
 export const set = createAction('modal/SET', (isOpen) => ({isOpen}))
 
 export default createReducer({
-  [set]: (state, payload) => state.set('isOpen', payload.isOpen),
-  [setData]: (state, payload) => state.set('data', payload.data),
-  [clearData]: (state) => state.set('data', fromJS({}))
+  [set]: (state, payload) => state.set('isOpen', payload.isOpen)
 }, initialState);

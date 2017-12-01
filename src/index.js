@@ -1,9 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './Redux/store';
 import './index.css';
 import 'semantic-ui-css/semantic.min.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let _renderApp = () => {
+  return (<App />)
+}
+
+render(
+  <Provider store={store}>
+    {_renderApp()}
+  </Provider>,
+  document.getElementById('root')
+);
 registerServiceWorker();

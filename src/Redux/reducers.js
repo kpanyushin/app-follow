@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux-loop';
 import { Map } from 'immutable';
 
+import ModalState from './reducers/ModalState';
+
 const reducers = {
   modal: ModalState
 };
